@@ -30,7 +30,7 @@ This is not an argument against regex. It's an argument for learning the fundame
 
 The full write-up explaining the theory and implementation.
 
-📄 [Download Paper (PDF)](https://nightly.link/josestg/dfaregexp/workflows/ci/main/paper.zip)
+📄 [Download Paper (PDF)](https://josestg.github.io/dfaregexp/readme.pdf)
 
 Or build locally:
 
