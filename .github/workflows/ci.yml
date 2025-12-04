@@ -17,7 +17,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.23'
+          go-version: '1.25'
 
       - name: Test (regexp implementation)
         run: go test -v
@@ -26,17 +26,14 @@ jobs:
         run: go test -v -tags=dfa
 
       - name: Benchmark
-        run: |
-          go test -bench=. -benchmem -count=5 | tee bench-regexp.out
-          go test -bench=. -benchmem -count=5 -tags=dfa | tee bench-dfa.out
+        run: make bench
 
       - name: Upload benchmark results
         uses: actions/upload-artifact@v4
         with:
           name: benchmark-results
           path: |
-            bench-regexp.out
-            bench-dfa.out
+            bench.out
 
   build-pdf:
     name: Build PDF
