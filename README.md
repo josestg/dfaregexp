@@ -28,7 +28,11 @@ This is not an argument against regex. It's an argument for learning the fundame
 
 ## Paper
 
-The full write-up is in `readme.tex`. Build the PDF:
+The full write-up explaining the theory and implementation.
+
+📄 [Download Paper (PDF)](https://nightly.link/josestg/dfaregexp/workflows/ci/main/paper.zip)
+
+Or build locally:
 
 ```bash
 make pdf
